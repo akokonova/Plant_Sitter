@@ -69,7 +69,7 @@ presets: [
     {
       specs: [
         {
-          id: 'petstore',
+          id: 'plant_sitter',
           spec: 'api_specs/openapi.yaml',
         },
       ],
