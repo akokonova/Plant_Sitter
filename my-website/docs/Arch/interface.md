@@ -5,7 +5,7 @@ hide_table_of_contents: true
 
 # Экраны для ситтера
 
+import Drawio from '@theme/Drawio'
+import diagram from '!!raw-loader!./arch.drawio';
 
-# Модель С4
-
-## Уровень 1. Диаграмма системного контекста (System Context)
+<Drawio content={diagram} editable={false} />
