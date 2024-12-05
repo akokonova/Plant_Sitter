@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Scenario/usecases" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">Сценарии пользовательского пути | My Site</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://akokonova.github.io/Plant_Sitter/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://akokonova.github.io/Plant_Sitter/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://akokonova.github.io/Plant_Sitter/docs/Scenario/usecases"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Сценарии пользовательского пути | My Site"><meta data-rh="true" name="description" content="Use Cases &amp; User Srories"><meta data-rh="true" property="og:description" content="Use Cases &amp; User Srories"><link data-rh="true" rel="icon" href="/Plant_Sitter/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://akokonova.github.io/Plant_Sitter/docs/Scenario/usecases"><link data-rh="true" rel="alternate" href="https://akokonova.github.io/Plant_Sitter/docs/Scenario/usecases" hreflang="en"><link data-rh="true" rel="alternate" href="https://akokonova.github.io/Plant_Sitter/docs/Scenario/usecases" hreflang="x-default"><script src="https://cdn.jsdelivr.net/npm/docusaurus-plugin-drawio/viewer.min.js"></script><link rel="stylesheet" href="/Plant_Sitter/assets/css/styles.3f56d5eb.css">
+<script src="/Plant_Sitter/assets/js/runtime~main.5814603d.js" defer="defer"></script>
+<script src="/Plant_Sitter/assets/js/main.1da1ca24.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/Plant_Sitter/"><div class="navbar__logo"><img src="/Plant_Sitter/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/Plant_Sitter/img/logo.svg" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Plant_Sitter</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/Plant_Sitter/docs/intro">Plant Sitter</a><a class="navbar__item navbar__link" href="/Plant_Sitter/blog">Blog</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/akokonova/Plant_Sitter" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Plant_Sitter/docs/intro">Концепция и границы продукта</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Plant_Sitter/docs/category/бизнес-процессы">Бизнес процессы</a><button aria-label="Expand sidebar category &#x27;Бизнес процессы&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/Plant_Sitter/docs/category/сценарии">Сценарии</a><button aria-label="Collapse sidebar category &#x27;Сценарии&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/Plant_Sitter/docs/Scenario/usecases">Сценарии пользовательского пути</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Plant_Sitter/docs/category/нфт">НФТ</a><button aria-label="Expand sidebar category &#x27;НФТ&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Plant_Sitter/docs/category/апи">АПИ</a><button aria-label="Expand sidebar category &#x27;АПИ&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Plant_Sitter/docs/category/архитектура">Архитектура</a><button aria-label="Expand sidebar category &#x27;Архитектура&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Plant_Sitter/docs/category/модель-данных">Модель данных</a><button aria-label="Expand sidebar category &#x27;Модель данных&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Plant_Sitter/docs/category/erd">ERD</a><button aria-label="Expand sidebar category &#x27;ERD&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/Plant_Sitter/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/Plant_Sitter/docs/category/сценарии"><span itemprop="name">Сценарии</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Сценарии пользовательского пути</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Сценарии пользовательского пути</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="use-cases--user-srories">Use Cases &amp; User Srories<a href="#use-cases--user-srories" class="hash-link" aria-label="Direct link to Use Cases &amp; User Srories" title="Direct link to Use Cases &amp; User Srories">​</a></h2>
+<h1>User story 1: Как владелец растений или ситтер я хочу иметь возможность зарегистрироваться в сервисе</h1>
+<ul>
+<li>
+<p><strong>Use case 1</strong>: Регистрация пользователя в сервисе</p>
+<p><strong>Цель</strong>: Позволить новому пользователю зарегистрироваться в сервисе для дальнейшего выбора своей роли в качестве владельца растения или ситтера и заведения профиля в соответствие с ролью
+<strong>Участники</strong>:</p>
+<ul>
+<li>Владелец растений (далее Пользователь)</li>
+<li>Система управления профилями (далее Система)</li>
+</ul>
+<p><strong>Предусловие</strong>: Пользователь еще не зарегистрирован в системе.</p>
+<p><strong>Основной сценарий</strong>:</p>
+<ol>
+<li>Пользователь открывает раздел &quot;зарегистрироваться&quot;</li>
+<li>Система отображает страницу с возможностью регистрации по номеру телефона путем получения кода подтверждения по смс или по звонку, или другими способами (email, профили ВК, Google)</li>
+<li>Пользователь выбирает способ с телефоном, вводит номер телефона и выбирает вариант по которому он хочет получить код подтверждения</li>
+<li>Система проверяет номер телефона на корректность и направляет код по номеру телефона или направляет звонок, по которому будет продиктован код подтверждения в зависимости от ответа пользователя</li>
+<li>Пользователь получает код и вводит его в систему</li>
+<li>Система проверяет введенный код на корректность и подтверждает регистрацию</li>
+<li>Система переводит пользователя на страницу с личным кабинетом</li>
+<li>В личном кабинете пользователь выбирает, в качестве кого он хочет зарегистрироваться: владельца растения (UC 2) или ситтера (UC 3)</li>
+</ol>
+<p><strong>Постусловия</strong>: Пользователь зарегистрирован в сервисе и имеет личный кабинет, в котором может выбрать свою роль и завести профиль владельца растения/ситтера</p>
+<ul>
+<li>
+<p><strong>Альтернативный сценарий 1(a)</strong>: Регистрация через email</p>
+<p>1.3a. Пользователь выбирает опцию регистрации через email
+1.4a. Система отображает форму для ввода email и пароля
+1.5a. Пользователь вводит email и создает пароль
+1.6a. Система пров еряет корректность email и отправляет письмо с подтверждением
+1.7a. Пользователь подтверждает email, перейдя по ссылке в письме
+1.8a. Система активирует аккаунт и переводит пользователя в личный кабинет</p>
+</li>
+<li>
+<p><strong>Альтернативный сценарий 2(b)</strong>: Регистрация через социальные сети</p>
+<p>1.3b. Пользователь выбирает опцию регистрации через социальную сеть (например, ВК или Google)
+1.4b. Система перенаправляет пользователя на страницу авторизации выбранной социальной сети
+1.5b. Пользователь подтверждает доступ к своим данным в социальной сети
+1.6b. Система получает необходимую информацию и создает аккаунт
+1.7b. Система переводит пользователя в личный кабинет</p>
+</li>
+<li>
+<p><strong>Альтернативный сценарий 3(c)</strong>: Ошибка при вводе кода подтверждения</p>
+<p>1.6c. Пользователь вводит неверный код подтверждения
+1.7c. Система сообщает об ошибке и предлагает повторить ввод или запросить новый код
+1.8c. Пользователь запрашивает новый код
+1.9c. Система генерирует и отправляет новый код подтверждения
+1.10c. Процесс повторяется с шага 5 основного сценария</p>
+</li>
+<li>
+<p><strong>Альтернативный сценарий 4(d)</strong>: Номер телефона уже зарегистрирован</p>
+<p>1.4d. Система обнаруживает, что введенный номер телефона уже зарегистрирован
+1.5d. Система предлагает пользователю войти в существующий аккаунт или восстановить пароль
+1.6d. Пользователь выбирает восстановление пароля
+1.7d. Система инициирует процесс восстановления пароля</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1>User story 2: как владелец растения я хочу иметь возможность создать профиль и пользоваться сервисом</h1>
+<ul>
+<li>
+<p><strong>Use case 2</strong>: Создание профиля владельца растения</p>
+<p><strong>Цель</strong>: Позволить новому пользователю создать профиль владельца растений для использования сервиса
+<strong>Участники</strong>:</p>
+<ul>
+<li>Владелец растений (далее Пользователь)</li>
+<li>Система управления профилями (далее Система)</li>
+</ul>
+<p><strong>Предусловие</strong>: Пользователь зарегистрирован в системе и выбрал создание профиля владельца растений.</p>
+<p><strong>Основной сценарий</strong>:</p>
+<ol>
+<li>Пользователь открывает раздел &quot;Создать профиль владельца растений&quot; в личном кабинете</li>
+<li>Система отображает форму для заполнения данных профиля</li>
+<li>Пользователь вводит личную информацию (имя, контактные данные, адрес)</li>
+<li>Пользователь указывает предпочтения по уходу за растениями</li>
+<li>Пользователь загружает фотографию профиля (опционально)</li>
+<li>Система проверяет введенные данные на корректность</li>
+<li>Пользователь подтверждает создание профиля</li>
+<li>Система сохраняет профиль и активирует его</li>
+</ol>
+<p><strong>Постусловия</strong>: Профиль владельца растений создан и доступен для использования в сервисе</p>
+<ul>
+<li>
+<p><strong>Альтернативный сценарий 1(a)</strong>: Импорт данных из социальных сетей</p>
+<p>2.3a. Пользователь выбирает опцию &quot;Импортировать данные из социальной сети&quot;
+2.4a. Система предлагает выбор доступных социальных сетей
+2.5a. Пользователь выбирает социальную сеть и подтверждает доступ
+2.6a. Система автоматически заполняет основные поля профиля данными из соцсети
+2.7a. Пользователь проверяет и при необходимости корректирует импортированные данные
+2.8a. Процесс продолжается с шага 4 основного сценария</p>
+</li>
+<li>
+<p><strong>Альтернативный сценарий 2(b)</strong>: Ошибка при загрузке фотографии</p>
+<p>2.5b. Пользователь пытается загрузить фотографию профиля, но возникает ошибка
+2.6b. Система сообщает об ошибке и предлагает повторить загрузку (продолжается основной сценарий с щага 5) или продолжить без фото
+2.7b. Пользователь выбирает продолжить без фото
+2.8b. Процесс продолжается с шага 6 основного сценария</p>
+</li>
+<li>
+<p><strong>Альтернативный сценарий 3(c)</strong>: Прерывание создания профиля</p>
+<p>2.4c. Пользователь решает прервать процесс создания профиля
+2.5c. Система предлагает сохранить черновик профиля
+2.6c. Пользователь выбирает опцию &quot;Сохранить черновик&quot;
+2.7c. Система сохраняет введенные данные как черновик
+2.8c. Пользователь может вернуться к заполнению профиля позже
+2.9c. При возвращении система загружает сохраненный черновик
+2.10c. Процесс продолжается с места, где пользователь остановился</p>
+</li>
+<li>
+<p><strong>Альтернативный сценарий 4(d)</strong>: Дополнительная верификация</p>
+<p>2.6d. Система запрашивает дополнительную верификацию пользователя (например, подтверждение email)
+2.7d. Пользователь проходит процесс дополнительной верификации
+2.8d. После успешной верификации процесс продолжается с шага 7 основного сценария</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1>User story 3: как ситтер я хочу иметь возможность создать профиль, чтобы пользовать сервисом</h1>
+<ul>
+<li>
+<p><strong>Use case 3</strong>: Создание профиля ситтера</p>
+<p><strong>Цель</strong>: Позволить ситтеру создать профиль для предоставления услуг по уходу за растениями</p>
+<p><strong>Участники</strong>:</p>
+<ul>
+<li>Ситтер (далее Пользователь)</li>
+<li>Система управления профилями (далее Система)</li>
+</ul>
+<p><strong>Предусловие</strong>: Пользователь зарегистрирован в системе и выбрал создание профиля ситтера владельца растений</p>
+<p><strong>Основной сценарий</strong>:</p>
+<ol>
+<li>Пользователь открывает раздел &quot;Создать профиль ситтера&quot; в личном кабинете</li>
+<li>Система отображает форму для заполнения данных</li>
+<li>Пользователь вводит личную информацию, указывает специализацию и навыки, а также стоимость услуг в день</li>
+<li>Пользователь загружает фотографию профиля при желании</li>
+<li>Система проверяет введенные данные</li>
+<li>Пользователь подтверждает создание профиля</li>
+<li>Система сохраняет профиль и активирует его</li>
+</ol>
+<p><strong>Постусловия</strong>: Профиль ситтера создан и доступен для поиска клиентами</p>
+<ul>
+<li>
+<p><strong>Альтернативный сценарий 1(a)</strong>: Верификация профессиональных навыков</p>
+<p>3.5a. Система предлагает пройти онлайн-тест для подтверждения навыков ухода за растениями
+3.6a. Пользователь проходит тест
+3.7a. Система проверяет результаты и добавляет верифици рованные навыки в профиль
+3.8a. Процесс продолжается с шага 6 основного сценария</p>
+</li>
+<li>
+<p><strong>Альтернативный сценарий 2(b)</strong>: Временное сохранение профиля</p>
+<p>3.3b. Пользователь частично заполняет профиль и решает прервать процесс создания профиля
+3.4b. Система предлагает сохранить черновик профиля
+3.5b. Пользователь выбирает опцию &quot;Сохранить черновик&quot;
+3.6b. Система сохраняет введенные данные как черновик
+3.7b. Пользователь может вернуться к заполнению профиля позже
+3.8b. При возвращении система загружает сохраненный черновик
+3.9b. Процесс продолжается с места, где пользователь остановился</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1>User story 4: как владелец растений я хочу иметь возможность создать карточку своих растений с информацией о них</h1>
+<ul>
+<li>
+<p><strong>Use case 4:</strong> Создание карточки растения</p>
+<p><strong>Цель</strong>: позволить владельцу растения создать карточку для поиска подходящего ситтера</p>
+<p><strong>Участники</strong>:</p>
+<ul>
+<li>Пользователь (владелец растения)</li>
+<li>Система управления растениями (далее Система)</li>
+</ul>
+<p><strong>Предусловие</strong>: Пользователь авторизован в системе</p>
+<p><strong>Основной сценарий</strong>:</p>
+<ol>
+<li>Пользователь открывае т раздел &quot;Мои растения&quot;</li>
+<li>Пользователь выбирает опцию &quot;Добавить новое растение&quot;</li>
+<li>Система отображает форму для заполнения информации о растении</li>
+<li>Пользователь вводит название, вид растения и требования по уходу</li>
+<li>Пользователь загружает фотографии растения</li>
+<li>Пользователь подтверждает создание карточки растения</li>
+<li>Система сохраняет карточку растения</li>
+</ol>
+<p><strong>Постусловия</strong>: Карточка растения создана и доступна для поиска ситтера</p>
+<ul>
+<li>
+<p><strong>Альтернативный сценарий 1(a)</strong>: Использование шаблонов растений</p>
+<p>4.3a. Система предлагает выбор из популярных шаблонов растений по названию
+4.4a. Пользователь выбирает подходящий шаблон
+4.5a. Система автоматически заполняет основные поля информацией из шаблона
+4.6a. Пользователь корректирует и дополняет информацию при необходимости
+4.7a. Процесс продолжается с шага 5 основного сценария</p>
+</li>
+<li>
+<p><strong>Альтернативный сценарий 2(b)</strong>: Создание группы растений</p>
+<p>4.2b. Пользователь выбирает опцию &quot;Создать группу растений&quot;
+4.3b. Система предлагает форму для создания группы растений
+4.4b. Пользователь вводит общую информацию для группы растений
+4.5b. Пользователь добавляет несколько растений в группу, заполняя краткую информацию о каждом
+4.6b. Система создает карточки для каждого растения в группе с общими параметрами
+4.7b. Пользователь может дополнить информацию о каждом растении индивидуально</p>
+</li>
+<li>
+<p><strong>Альтернативный сценарий 3(c)</strong>: Распознавание растения по фото</p>
+<p>4.4c. Пользователь загружает фото растения и выбирает опцию &quot;Распознать растение&quot;
+4.5c. Система анализирует фото и предлагает возможные варианты вида растения
+4.6c. Пользователь подтверждает или корректирует предложенный вариант
+4.7c. Система автоматически заполняет поля с основной информацией о растении
+4.8c. Процесс продолжается с шага 4 основного сценария</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1>User story 5: как владелец растений я хочу иметь возможность подобрать подходящего ситтера для своих растений на период отпуска/отъезда/ремонта</h1>
+<ul>
+<li>
+<p><strong>Use case 5:</strong> Выбор ситтера</p>
+<p><strong>Цель</strong>: позволить пользователю подобрать подходящего ситтера для своего растения</p>
+<p><strong>Участники</strong>:</p>
+<ul>
+<li>
+<p>Пользователь (владелец растения)</p>
+</li>
+<li>
+<p>Пользователь (<strong>ситтер</strong>)</p>
+</li>
+<li>
+<p>Система поиска ситтеров (далее Система)</p>
+</li>
+</ul>
+<p><strong>Предусловие</strong>: Пользователь авторизован в системе и создал карточку растения</p>
+<p><strong>Основной сценарий</strong>:</p>
+<ol>
+<li>Пользователь открывает систему поиска ситтеров</li>
+<li>Система отображает список всех ситтеров</li>
+<li>Пользователь открывает встроенный фильтр и выбирает радиус (в км. от своего местоположения или определенного адреса) в котором должен находиться ситтер</li>
+<li>Пользователь выбирает даты, в которые ему нужны услуги ситтера и диапазон стоимости услуг (при необходимости)</li>
+<li>Система выдает список ситтеров по удаленности (от самого близкого), их адреса, рейтинг и стоимость услуг</li>
+<li>Пользователь открывает и просматривает карточки ситтеров, с общей информацией</li>
+<li>Пользователь просматривает отзывы в карточке ситтера</li>
+<li>Пользователь выбирает ситтера</li>
+<li>Система переводит пользователя на страницу бронирования</li>
+</ol>
+<p><strong>Постусловия</strong>: Пользователь выбрал подходящего ситтера и перешел в систему бронирования</p>
+<ul>
+<li>
+<p><strong>Альтернативный сценарий 1(a): Автоматический подбор ситтера</strong></p>
+<p>5.5a. Пользователь выбирает опцию &quot;Автоматический подбор&quot;
+5.6a. Система анализирует карточку растения и предпочтения пользователя (фильтры)
+5.7a. Система предлагает наиболее подходящего ситтера на основе анализа
+5.8a. Пользователь просматривает предложенного ситтера
+5.9a. Если пользователь согласен, процесс продолжается с шага 9 основного сценария
+5.10a. Если пользователь не согласен, возврат к шагу 2 основного сценария</p>
+</li>
+<li>
+<p><strong>Альтернативный сценарий 2(b): Поиск по специализации</strong></p>
+<p>5.3b. Пользователь выбирает специализацию ситтера (например, эксперт по орхидеям)
+5.4b. Система фильтрует ситтеров по выбранной специализации
+5.5b. Процесс продолжается с шага 5 основного сценария</p>
+</li>
+<li>
+<p><strong>Альтернативный сценарий 3(с): Запрос дополнительной информации</strong></p>
+<p>5.7с. Пользователь отправляет запрос на дополнительную информацию ситтеру
+5.8с. Система уведомляет ситтера о запросе
+5.9с. Ситтер отвечает на запрос через систему
+5.10с. Пользователь получает ответ и принимает решение
+5.11с. Если пользователь удовлетворен ответом, процесс продолжается с шага 8 основного сценария
+5.12с. Если пользователь не удовлетворен, возврат к шагу 2 основного сценария</p>
+</li>
+<li>
+<p><strong>Альтернативный сценарий 4(d): Использование карты для выбора ситтера</strong></p>
+<p>5.3d. Пользователь выбирает опцию &quot;Показать на карте&quot;
+5.4d. Система отображает карту с отмеченными ситтерами в выбранном радиусе
+5.5d. Пользователь выбирает ситтера, нажимая на метку на карте
+5.6d. Система открывает карточку выбранного ситтера
+5.7d. Процесс продолжается с шага 7 основного сценария</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1>User story 6: как владелец растений я хочу иметь возможность забронировать выбранного ситтера и оплатить его услуги</h1>
+<ul>
+<li>
+<p><strong>Use case 6:</strong> Бронирование и оплата услуг ситтера</p>
+<p><strong>Цель</strong>: позволить пользователю успешно забронировать услуги ситтера для ухода за растением</p>
+<p><strong>Участники</strong>:</p>
+<ul>
+<li>
+<p>Пользователь (владелец растения)</p>
+</li>
+<li>
+<p>Пользователь (<strong>ситтер</strong>)</p>
+</li>
+<li>
+<p>Система бронирования (далее Система)</p>
+</li>
+</ul>
+<p><strong>Предусловие</strong>: Пользователь авторизован в системе, создал карточку растения и выбрал подходящего ситтера</p>
+<p><strong>Основной сценарий</strong>:</p>
+<ol>
+<li>Пользователь открывает страницу бронирования</li>
+<li>Система отображает календарь доступности выбранного ситтера и проставленные ранее в фильтре даты</li>
+<li>Пользователь подтверждает проставленные ранее даты ухода за растением или выбирает новые.</li>
+<li>Система проверяет доступность ситтера на выбранные даты</li>
+<li>Пользователь подтверждает детали бронирования</li>
+<li>Система отправляет запрос на согласование ситтеру</li>
+<li>Ситтер подтверждает заказ</li>
+<li>Система направляет клиенту подтверждение и уведомление о необходимости оплаты</li>
+<li>Система отображает форму оплаты и, если у выбранного ситтера нет отзывов, делает скидку (это из нашей бонусной-скидочной системы, чтобы стимулировать пользователей делать заказы и у ситтеров появлялись отзывы(ниже))</li>
+<li>Пользователь вводит платежные данные и подтверждает оплату</li>
+<li>Система обрабатывает платеж и создает бронирование</li>
+<li>Система отправляет подтверждение бронирования пользователю и ситтеру</li>
+</ol>
+<p><strong>Постусловия</strong>: Бронирование создано, оплата проведена, пользователь и ситтер получили подтверждения</p>
+<ul>
+<li>
+<p><strong>Альтернативный сценарий 1(a): Ситтер не соглашается на заказ</strong></p>
+<p>6.6a. Система уведомляет ситтера о новом запросе
+6.7a. Ситтер отклоня ет запрос
+6.8a. Система уведомляет пользователя об отказе
+6.9a. Система предлагает пользователю выбрать другого ситтера или изменить параметры поиска
+6.10a. Пользователь возвращается к шагу 3 основного сценария UC 5.</p>
+</li>
+<li>
+<p><strong>Альтернативный сценарий 2(b): Недостаточно средств для оплаты</strong></p>
+<p>6.10b. Пользователь вводит платежные данные, но на счете недостаточно средств
+6.11b. Система сообщает об ошибке оплаты
+6.12b. Система предлагает выбрать другой способ оплаты или отложить бронирование
+6.13b. Пользователь выбирает альтернативный способ оплаты или откладывает бронирование</p>
+</li>
+<li>
+<p><strong>Альтернативный сценарий 3(c): Отмена бронирования пользователем</strong></p>
+<p>6.8c. Пользователь решает отменить бронирование
+6.9c. Система запрашивает подтверждение отмены
+6.10c. Пользователь подтверждает отмену
+6.11c. Система отменяет процесс бронирования, возвращает пользователя на страницу поиска ситтеров и отправляет уведомление об отмене заказа ситтеру</p>
+</li>
+</ul>
+</li>
+</ul>
+<h1>User story 7: как владелец растений я хочу иметь возможность оставить отзыв на ситтера по результатам оказанных им услуг</h1>
+<ul>
+<li>
+<p><strong>Use case 7:</strong> Оставление от зыва пользователем - владельцем растения</p>
+<p><strong>Цель</strong>: позволить пользователю оставить обратную связь о ситтере, чтобы остальные пользователи знали больше о его компетентности</p>
+<p><strong>Участники</strong>:</p>
+<ul>
+<li>Пользователь (владелец растения)</li>
+<li>Система отзывов (далее Система)</li>
+</ul>
+<p><strong>Предусловие</strong>: Пользователь авторизован в системе, создал карточку растения и выбрал подходящего ситтера, оформлял и оплачивал подтвержденную бронь у данного ситтера, прошло не более 7 дней после завершения заказа</p>
+<p><strong>Основной сценарий</strong>:</p>
+<ol>
+<li>Пользователь открывает раздел &quot;История заказов&quot; в личном кабинете</li>
+<li>Система отображает список завершенных заказов в хронологическом порядке (от самого позднего)</li>
+<li>Пользователь выбирает заказ, по которому хочет оставить отзыв и в карточке с деталями заказа нажимает на кнопку &quot;Оставить отзыв&quot;</li>
+<li>Система отображает форму согласно макету <a href="https://unidraw.io/board/00028505cb310b777850" target="_blank" rel="noopener noreferrer">1.1. Форма отзыва владельца растений</a></li>
+<li>Пользователь выставляет рейтинг ситтеру (от 1 до 5 звезд)</li>
+<li>Пользователь пишет текстовый комментарий о свое м опыте работы с владельцем и прикрепляет фото (скриншот переписки/фото растения) по желаниию</li>
+<li>Пользователь нажимает кнопку &quot;Оставить отзыв&quot;</li>
+<li>Система проверяет корректность заполнения формы</li>
+<li>Система сохраняет отзыв в профиле ситтера</li>
+<li>Система обновляет рейтинг ситтера</li>
+</ol>
+<p><strong>Постусловия</strong>: Отзыв оставлен и отображен в профиле ситтера, рейтинг ситтера обновлен</p>
+</li>
+</ul>
+<h1>User story 8: как ситтер я хочу иметь возможность оставить отзыв на владельца растения по результатам ообщения с ним и оказания ему услуг</h1>
+<ul>
+<li>
+<p><strong>Use case 8:</strong> Оставление отзыва пользователей - ситтеров</p>
+<p>Позволить ситтеру оставить отзыв о владельце растений после выполнения заказа</p>
+<p><strong>Участники</strong>:</p>
+<ul>
+<li>Ситтер (далее Пользователь)</li>
+<li>Система отзывов (далее Система).</li>
+</ul>
+<p><strong>Предусловие</strong>: Пользователь зарегистрирован, имеет активированный профиль и завершил заказ по уходу за растениями, прошло не более 7 дней после завершения заказа</p>
+<p><strong>Основной сценарий</strong>:</p>
+<ol>
+<li>Пользователь открывает раздел &quot;История заказов&quot; в личном кабинете</li>
+<li>Система отображает список завершенных заказов в хронологическом порядке (от самого позднего)</li>
+<li>Пользователь выбирает заказ, по которому хочет оставить отзыв и в карточке с деталями заказа нажимает на кнопку &quot;Оставить отзыв&quot;</li>
+<li>Система открывает форму для написания отзыва согласно макету  <a href="https://unidraw.io/board/00028505cb310b777850" target="_blank" rel="noopener noreferrer">1.2. Форма отзыва ситтера</a></li>
+<li>Пользователь выставляет рейтинг владельцу растений (от 1 до 5 звезд)</li>
+<li>Пользователь пишет текстовый комментарий о своем опыте работы с владельцем и прикрепляет фото (скриншот переписки/фото растения) по желаниию</li>
+<li>Пользователь нажимает кнопку &quot;Оставить отзыв&quot;</li>
+<li>Система проверяет корректность заполнения формы</li>
+<li>Система сохраняет отзыв в профиле ситтера</li>
+<li>Система обновляет рейтинг ситтера</li>
+</ol>
+<p><strong>Постусловия</strong>: Отзыв сохранен в системе, рейтинг владельца растений обновлен</p>
+</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/akokonova/Plant_Sitter/docs/Scenario/usecases.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/Plant_Sitter/docs/category/сценарии"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Сценарии</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/Plant_Sitter/docs/category/нфт"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">НФТ</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#use-cases--user-srories" class="table-of-contents__link toc-highlight">Use Cases &amp; User Srories</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Plant_Sitter/docs">Docs</a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://stackoverflow.com/questions/tagged/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Stack Overflow<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discordapp.com/invite/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://x.com/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">X<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Plant_Sitter/blog">Blog</a></li><li class="footer__item"><a href="https://github.com/facebook/docusaurus" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
